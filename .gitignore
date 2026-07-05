@@ -1,8 +1,5 @@
 # Virtual environment
-ShouldTire_ENV
-
-# Dataset
-TIRE_DATASET
+repo_env_temp
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
