@@ -597,6 +597,30 @@ def main(app):
                                             "borderRadius": "10px",
                                             "padding": "5px"
                                         }                                                                             
+                                    ),
+                                    html.Div(
+                                        children=[
+                                            html.I(
+                                                className="fa-brands fa-github",
+                                                style={
+                                                    "paddingRight": "10px"
+                                                }
+                                            ),
+                                            "Source: " ,
+                                            html.A(
+                                                "Repository",
+                                                href="https://github.com/jadd-miguel/will-it-be-a-hit",
+                                                target="_blank",
+                                                style={
+                                                    "textDecoration": "none"
+                                                }
+                                            ),
+                                        ],  
+                                        style={
+                                            "border": "2px solid black",
+                                            "borderRadius": "10px",
+                                            "padding": "5px"
+                                        }                                                                             
                                     )
                                 ],
                                 style={
@@ -828,4 +852,4 @@ if __name__ == '__main__':
     ]
     app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
     main(app)
-    app.run(port=8050, debug=False)
+    app.run(host="0.0.0.0", port=8050, debug=False)
